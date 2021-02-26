@@ -1,0 +1,32 @@
+---
+title: "Life expectancy"
+output: html_document
+---
+
+
+```{r setup}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)
+```
+
+
+## Life expectancy
+
+How does life expectancy vary by continent in the year 2011? 
+
+```{r}
+
+ggplot(gap2011, aes(x = continent, y = life_expectancy, color = continent)) + geom_boxplot()
+
+
+```
+
+How does life expectancy relate to infant mortality rate? 
+
+
+```{r}
+
+ggplot(gap2011, aes(x = infant_mortality, y = life_expectancy,color = continent)) + geom_point()
+
+
+```
+
