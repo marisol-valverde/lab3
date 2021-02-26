@@ -1,0 +1,9 @@
+name: "Lab 3 website"
+navbar:
+  title: "Lab 3 website"
+  left:
+    - text: "Welcome"
+      href: index.html
+    - text: "About"
+      href: data.html
+output_dir: "."
